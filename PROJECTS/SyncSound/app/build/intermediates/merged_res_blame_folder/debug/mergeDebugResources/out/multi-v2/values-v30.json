@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.syncsound.app-mergeDebugResources-41:/values-v30/values-v30.xml",
+            "map": [
+                {
+                    "source": "/Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/9b0b2aa1407b874b21c5bdda09a6e46f/transformed/material3/res/values-v30/values-v30.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    }
+                }
+            ]
+        }
+    ]
+}

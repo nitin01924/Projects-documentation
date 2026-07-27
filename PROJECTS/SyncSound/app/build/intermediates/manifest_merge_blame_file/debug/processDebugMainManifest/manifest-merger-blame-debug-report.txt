@@ -1,0 +1,211 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.syncsound.app"
+4    android:versionCode="1"
+5    android:versionName="1.0.0-rc1" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="36" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:4:5-67
+11-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:5:5-79
+12-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+13-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:6:5-79
+13-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:6:22-76
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:7:5-76
+14-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:7:22-73
+15    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+15-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:8:5-86
+15-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:8:22-83
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:9:5-77
+16-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:9:22-74
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+17-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:10:5-92
+17-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:10:22-89
+18    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+18-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:11:5-94
+18-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:11:22-91
+19    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+19-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:12:5-94
+19-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:12:22-91
+20    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+20-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:13:5-77
+20-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:13:22-74
+21    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+21-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:14:5-71
+21-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:14:22-68
+22    <uses-permission
+22-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:15:5-18:31
+23        android:name="android.permission.NEARBY_WIFI_DEVICES"
+23-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:16:9-62
+24        android:usesPermissionFlags="neverForLocation" />
+24-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:17:9-55
+25
+26    <permission
+26-->[androidx.core:core:1.18.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:22:5-24:47
+27        android:name="com.syncsound.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+27-->[androidx.core:core:1.18.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:23:9-81
+28        android:protectionLevel="signature" />
+28-->[androidx.core:core:1.18.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:24:9-44
+29
+30    <uses-permission android:name="com.syncsound.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+30-->[androidx.core:core:1.18.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:26:5-97
+30-->[androidx.core:core:1.18.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:26:22-94
+31
+32    <application
+32-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:20:5-43:19
+33        android:name="com.syncsound.app.SyncSoundApplication"
+33-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:21:9-45
+34        android:allowBackup="true"
+34-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:22:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.18.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:28:18-86
+36        android:dataExtractionRules="@xml/data_extraction_rules"
+36-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:23:9-65
+37        android:debuggable="true"
+38        android:extractNativeLibs="false"
+39        android:fullBackupContent="@xml/backup_rules"
+39-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:24:9-54
+40        android:icon="@drawable/ic_launcher_foreground"
+40-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:25:9-56
+41        android:label="@string/app_name"
+41-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:26:9-41
+42        android:roundIcon="@drawable/ic_launcher_foreground"
+42-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:27:9-61
+43        android:supportsRtl="true"
+43-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:28:9-35
+44        android:theme="@style/Theme.SyncSound"
+44-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:29:9-47
+45        android:usesCleartextTraffic="true" >
+45-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:30:9-44
+46        <activity
+46-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:31:9-38:20
+47            android:name="com.syncsound.app.MainActivity"
+47-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:32:13-41
+48            android:exported="true" >
+48-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:33:13-36
+49            <intent-filter>
+49-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:34:13-37:29
+50                <action android:name="android.intent.action.MAIN" />
+50-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:35:17-69
+50-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:35:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:36:17-77
+52-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:36:27-74
+53            </intent-filter>
+54        </activity>
+55
+56        <service
+56-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:39:9-42:93
+57            android:name="com.syncsound.app.service.SessionForegroundService"
+57-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:40:13-61
+58            android:exported="false"
+58-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:41:13-37
+59            android:foregroundServiceType="connectedDevice|mediaPlayback|mediaProjection" />
+59-->/Users/nitin/PROJECTS/untitled folder/app/src/main/AndroidManifest.xml:42:13-90
+60
+61        <activity
+61-->[androidx.compose.ui:ui-tooling-android:1.11.3] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/04f58658803d76d6417491aa5ad7ccdb/transformed/ui-tooling/AndroidManifest.xml:23:9-25:39
+62            android:name="androidx.compose.ui.tooling.PreviewActivity"
+62-->[androidx.compose.ui:ui-tooling-android:1.11.3] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/04f58658803d76d6417491aa5ad7ccdb/transformed/ui-tooling/AndroidManifest.xml:24:13-71
+63            android:exported="true" />
+63-->[androidx.compose.ui:ui-tooling-android:1.11.3] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/04f58658803d76d6417491aa5ad7ccdb/transformed/ui-tooling/AndroidManifest.xml:25:13-36
+64
+65        <uses-library
+65-->[androidx.window:window:1.5.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
+66            android:name="androidx.window.extensions"
+66-->[androidx.window:window:1.5.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
+67            android:required="false" />
+67-->[androidx.window:window:1.5.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
+68        <uses-library
+68-->[androidx.window:window:1.5.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
+69            android:name="androidx.window.sidecar"
+69-->[androidx.window:window:1.5.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
+70            android:required="false" />
+70-->[androidx.window:window:1.5.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
+71
+72        <provider
+72-->[androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+73            android:name="androidx.startup.InitializationProvider"
+73-->[androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+74            android:authorities="com.syncsound.app.androidx-startup"
+74-->[androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+75            android:exported="false" >
+75-->[androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+76            <meta-data
+76-->[androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+77                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+77-->[androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+78                android:value="androidx.startup" />
+78-->[androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+79            <meta-data
+79-->[androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:29:13-31:52
+80                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+80-->[androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:30:17-78
+81                android:value="androidx.startup" />
+81-->[androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:31:17-49
+82            <meta-data
+82-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+83                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+83-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+84                android:value="androidx.startup" />
+84-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+85        </provider>
+86
+87        <activity
+87-->[androidx.compose.ui:ui-test-manifest:1.11.3] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/abc3e0b14ee11084babc97fd9f405083/transformed/ui-test-manifest-1.11.3/AndroidManifest.xml:23:9-26:79
+88            android:name="androidx.activity.ComponentActivity"
+88-->[androidx.compose.ui:ui-test-manifest:1.11.3] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/abc3e0b14ee11084babc97fd9f405083/transformed/ui-test-manifest-1.11.3/AndroidManifest.xml:24:13-63
+89            android:exported="true"
+89-->[androidx.compose.ui:ui-test-manifest:1.11.3] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/abc3e0b14ee11084babc97fd9f405083/transformed/ui-test-manifest-1.11.3/AndroidManifest.xml:25:13-36
+90            android:theme="@android:style/Theme.Material.Light.NoActionBar" />
+90-->[androidx.compose.ui:ui-test-manifest:1.11.3] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/abc3e0b14ee11084babc97fd9f405083/transformed/ui-test-manifest-1.11.3/AndroidManifest.xml:26:13-76
+91
+92        <receiver
+92-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+93            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+93-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+94            android:directBootAware="false"
+94-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+95            android:enabled="true"
+95-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+96            android:exported="true"
+96-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+97            android:permission="android.permission.DUMP" >
+97-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+98            <intent-filter>
+98-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+99                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+99-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+100            </intent-filter>
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+102                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+102-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+105                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+105-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+108                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+108-->[androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/untitled folder/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
+109            </intent-filter>
+110        </receiver>
+111    </application>
+112
+113</manifest>

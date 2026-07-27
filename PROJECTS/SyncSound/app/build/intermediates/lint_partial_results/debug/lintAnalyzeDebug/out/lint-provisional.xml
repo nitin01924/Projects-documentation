@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.13.0" type="conditional_incidents">
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 31">
+        <fix-replace
+            description="Delete tools:targetApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+                startOffset="1198"
+                endOffset="1217"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*manifest*0}"
+            line="18"
+            column="9"
+            startOffset="1198"
+            endLine="18"
+            endColumn="28"
+            endOffset="1217"/>
+        <map>
+            <condition minGE="31-∞"/>
+        </map>
+    </incident>
+
+    <incident
+        id="ObsoleteSdkInt"
+        severity="warning"
+        message="Unnecessary; `SDK_INT` is always >= 29">
+        <fix-replace
+            description="Delete @RequiresApi"
+            replacement=""
+            priority="0">
+            <range
+                file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/syncsound/app/audio/PlaybackCaptureStreamer.kt"
+                startOffset="3079"
+                endOffset="3114"/>
+        </fix-replace>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/syncsound/app/audio/PlaybackCaptureStreamer.kt"
+            line="85"
+            column="5"
+            startOffset="3079"
+            endLine="85"
+            endColumn="40"
+            endOffset="3114"/>
+        <map>
+            <condition minGE="29-∞"/>
+        </map>
+    </incident>
+
+</incidents>

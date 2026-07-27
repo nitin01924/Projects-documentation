@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.syncsound.app.network.HostControlServerTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2026-07-26T05:26:03.003Z" hostname="nitins-MacBook-Air.local" time="0.282">
+  <properties/>
+  <testcase name="invalidSessionCodeReturnsFriendlyProtocolError" classname="com.syncsound.app.network.HostControlServerTest" time="0.084"/>
+  <testcase name="approvalIsDeliveredAndConnectionRemainsOpen" classname="com.syncsound.app.network.HostControlServerTest" time="0.05"/>
+  <testcase name="approvingClientWhoseSocketClosedDoesNotThrow" classname="com.syncsound.app.network.HostControlServerTest" time="0.148"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

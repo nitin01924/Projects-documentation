@@ -1,0 +1,891 @@
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/app/build/intermediates/aapt_proguard_file/release/processReleaseResources/aapt_rules.txt
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.profileinstaller.ProfileInstallReceiver { <init>(); }
+-keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class com.syncsound.app.MainActivity { <init>(); }
+-keep class com.syncsound.app.SyncSoundApplication { <init>(); }
+-keep class com.syncsound.app.service.SessionForegroundService { <init>(); }
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/app/build/intermediates/aapt_proguard_file/release/processReleaseResources/aapt_rules.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.13.0
+# This is a configuration file for ProGuard.
+# http://proguard.sourceforge.net/index.html#manual/usage.html
+#
+# Starting with version 2.2 of the Android plugin for Gradle, this file is distributed together with
+# the plugin and unpacked at build-time. The files in $ANDROID_HOME are no longer maintained and
+# will be ignored by new version of the Android plugin for Gradle.
+
+# Optimizations: If you don't want to optimize, use the proguard-android.txt configuration file
+# instead of this one, which turns off the optimization flags.
+-allowaccessmodification
+
+# Preserve some attributes that may be required for reflection.
+-keepattributes AnnotationDefault,
+                EnclosingMethod,
+                InnerClasses,
+                RuntimeVisibleAnnotations,
+                RuntimeVisibleParameterAnnotations,
+                RuntimeVisibleTypeAnnotations,
+                Signature
+
+-keep public class com.google.vending.licensing.ILicensingService
+-keep public class com.android.vending.licensing.ILicensingService
+-keep public class com.google.android.vending.licensing.ILicensingService
+-dontnote com.android.vending.licensing.ILicensingService
+-dontnote com.google.vending.licensing.ILicensingService
+-dontnote com.google.android.vending.licensing.ILicensingService
+
+# For native methods, see https://www.guardsquare.com/manual/configuration/examples#native
+-keepclasseswithmembernames,includedescriptorclasses class * {
+    native <methods>;
+}
+
+# Keep setters in Views so that animations can still work.
+-keepclassmembers public class * extends android.view.View {
+    void set*(***);
+    *** get*();
+}
+
+# We want to keep methods in Activity that could be used in the XML attribute onClick.
+-keepclassmembers class * extends android.app.Activity {
+    public void *(android.view.View);
+}
+
+# For enumeration classes, see https://www.guardsquare.com/manual/configuration/examples#enumerations
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keepclassmembers class * implements android.os.Parcelable {
+    public static final ** CREATOR;
+}
+
+# Preserve annotated Javascript interface methods.
+-keepclassmembers class * {
+    @android.webkit.JavascriptInterface <methods>;
+}
+
+# The support libraries contains references to newer platform versions.
+# Don't warn about those in case this app is linking against an older
+# platform version. We know about them, and they are safe.
+-dontnote android.support.**
+-dontnote androidx.**
+-dontwarn android.support.**
+-dontwarn androidx.**
+
+# Understand the @Keep support annotation.
+-keep class android.support.annotation.Keep
+
+-keep @android.support.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @android.support.annotation.Keep <init>(...);
+}
+
+# These classes are duplicated between android.jar and org.apache.http.legacy.jar.
+-dontnote org.apache.http.**
+-dontnote android.net.http.**
+
+# These classes are duplicated between android.jar and core-lambda-stubs.jar.
+-dontnote java.lang.invoke.**
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/app/build/intermediates/default_proguard_files/global/proguard-android-optimize.txt-8.13.0
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/app/proguard-rules.pro
+# SyncSound currently uses only platform networking and codecs. Keep this file
+# for future serialization/native rules.
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/app/proguard-rules.pro
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/133656e44f66be99664dc902c77e9d92/transformed/navigation-runtime-release/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/133656e44f66be99664dc902c77e9d92/transformed/navigation-runtime-release/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/28069524ed3f2acffb352c7d1c4a332c/transformed/navigation-common-release/proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# NavArgsLazy creates NavArgs instances using reflection
+-if public class ** implements androidx.navigation.NavArgs
+-keepclassmembers public class <1> {
+    ** fromBundle(android.os.Bundle);
+}
+
+# Retain the @Navigator.Name annotation on each subclass of Navigator.
+# R8 full mode only retains annotations on items matched by a -keep rule,
+# hence the extra -keep rule for the subclasses of Navigator.
+#
+# A -keep rule for the Navigator.Name annotation class is not required
+# since the annotation is referenced from the code.
+-keepattributes RuntimeVisibleAnnotations
+-keep,allowobfuscation,allowshrinking class * extends androidx.navigation.Navigator
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/28069524ed3f2acffb352c7d1c4a332c/transformed/navigation-common-release/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e47b95a9c1320102b88e4ce23e3e6dfe/transformed/navigation-compose-release/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e47b95a9c1320102b88e4ce23e3e6dfe/transformed/navigation-compose-release/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b0b2aa1407b874b21c5bdda09a6e46f/transformed/material3/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b0b2aa1407b874b21c5bdda09a6e46f/transformed/material3/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c4b06223a788b4863fe7bc0c30f70d35/transformed/animation-core/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c4b06223a788b4863fe7bc0c30f70d35/transformed/animation-core/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9158f08b18c54608d4bb8aa8f536ccd4/transformed/animation/proguard.txt
+-assumevalues class androidx.compose.animation.IsLookaheadAnimationVisualDebuggingEnabledKt {
+    boolean isLookaheadAnimationVisualDebuggingEnabled return false;
+}
+
+-assumenosideeffects class * {
+    static androidx.compose.animation.LookaheadAnimationVisualDebugConfig *(...) return null;
+}
+
+-assumenosideeffects class androidx.compose.animation.LookaheadAnimationVisualDebugHelperKt {
+    public static void LookaheadAnimationVisualDebugging(...);
+}
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9158f08b18c54608d4bb8aa8f536ccd4/transformed/animation/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b7d784ba0f312657b6d7d9db61d4569e/transformed/foundation-layout/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b7d784ba0f312657b6d7d9db61d4569e/transformed/foundation-layout/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/33123198c4ae726ff582e178da3d8bb3/transformed/foundation/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+}
+
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/33123198c4ae726ff582e178da3d8bb3/transformed/foundation/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/08fbc1e017e8135d9db2446e5c47c776/transformed/ui-unit/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/08fbc1e017e8135d9db2446e5c47c776/transformed/ui-unit/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2d9341eebb45aab34aa17bc6f8f5e50a/transformed/ui-graphics/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+-keepclassmembers class androidx.compose.ui.graphics.layer.view.ViewLayerContainer {
+    protected void dispatchGetDisplayList();
+}
+-keepclassmembers class androidx.compose.ui.graphics.layer.view.PlaceholderHardwareCanvas {
+    public int drawRenderNode(...);
+    public boolean isHardwareAccelerated();
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2d9341eebb45aab34aa17bc6f8f5e50a/transformed/ui-graphics/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/51b4b60ac49d41cb361d71d09bc3c3bd/transformed/ui-util/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/51b4b60ac49d41cb361d71d09bc3c3bd/transformed/ui-util/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dad70557fb857f7008d5e72ca4d2b4f1/transformed/ui-text/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dad70557fb857f7008d5e72ca4d2b4f1/transformed/ui-text/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/37b40874f4cd5722e804b346fa4e5df0/transformed/navigationevent/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/37b40874f4cd5722e804b346fa4e5df0/transformed/navigationevent/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/fdd423fba77dd99a39a0234782bd0452/transformed/navigationevent-compose/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/fdd423fba77dd99a39a0234782bd0452/transformed/navigationevent-compose/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/871dcb5a50f07e117809fbaac264dffa/transformed/core-ktx-1.18.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/871dcb5a50f07e117809fbaac264dffa/transformed/core-ktx-1.18.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dec83ca7497e216db147b527122ede48/transformed/transition-1.6.0/proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Keep a field in transition that is used to keep a reference to weakly-referenced object
+-keepclassmembers class androidx.transition.ChangeBounds$* extends android.animation.AnimatorListenerAdapter {
+  androidx.transition.ChangeBounds$ViewBounds mViewBounds;
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dec83ca7497e216db147b527122ede48/transformed/transition-1.6.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1189d4dd10582e45aa25c85f52b5c874/transformed/window-core/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1189d4dd10582e45aa25c85f52b5c874/transformed/window-core/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# A rule that will keep classes that implement SidecarInterface$SidecarCallback if Sidecar seems
+# be used. See b/157286362 and b/165268619 for details.
+# TODO(b/208543178) investigate how to pass header jar to R8 so we don't need this rule
+-if class androidx.window.layout.adapter.sidecar.SidecarCompat {
+  public *** setExtensionCallback(androidx.window.layout.adapter.sidecar.ExtensionInterfaceCompat$ExtensionCallbackInterface);
+}
+-keep class androidx.window.layout.adapter.sidecar.SidecarCompat$TranslatingCallback,
+ androidx.window.layout.adapter.sidecar.DistinctElementSidecarCallback {
+  public *** onDeviceStateChanged(androidx.window.sidecar.SidecarDeviceState);
+  public *** onWindowLayoutChanged(android.os.IBinder, androidx.window.sidecar.SidecarWindowLayoutInfo);
+}
+# Required for window area API reflection guard
+-keep interface androidx.window.area.reflectionguard.* {*;}
+# Required to support kotlin-reflect
+-keep,allowshrinking class androidx.window.layout.adapter.extensions.MulticastConsumer {
+  void accept(androidx.window.extensions.layout.WindowLayoutInfo);
+}
+-keep interface androidx.window.reflection.Consumer2 {
+  public *** accept(***);
+}
+-keep interface androidx.window.reflection.Predicate2 {
+  public *** test(***);
+}
+-keep interface androidx.window.reflection.JFunction2 {
+  public *** apply(***);
+}
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/baf7ac534a317c218e483a4a8d6c1d2f/transformed/graphics-path-1.0.1/proguard.txt
+-keepclasseswithmembers class androidx.graphics.path.** {
+    native <methods>;
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/baf7ac534a317c218e483a4a8d6c1d2f/transformed/graphics-path-1.0.1/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$*Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.app.NotificationCompat$*$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.os.UserHandleCompat$Api*Impl {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.widget.EdgeEffectCompat$Api*Impl {
+  <methods>;
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bf1e76096e1a8fd699e5ac5ac51a2ccc/transformed/lifecycle-livedata-core-ktx-2.10.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bf1e76096e1a8fd699e5ac5ac51a2ccc/transformed/lifecycle-livedata-core-ktx-2.10.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c7f263352cf35729a9be2400d6346286/transformed/lifecycle-livedata-2.10.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c7f263352cf35729a9be2400d6346286/transformed/lifecycle-livedata-2.10.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/proguard.txt
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+-keepclassmembers class * extends androidx.lifecycle.EmptyActivityLifecycleCallbacks { *; }
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/01feb6b54ac8303893c7b586c0d3676d/transformed/lifecycle-livedata-core-2.10.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/01feb6b54ac8303893c7b586c0d3676d/transformed/lifecycle-livedata-core-2.10.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1c975e7c8b0b3f361ceb040deee7e154/transformed/lifecycle-viewmodel/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>();
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application);
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1c975e7c8b0b3f361ceb040deee7e154/transformed/lifecycle-viewmodel/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/d354ac0e689fff146decaf922ede6e6c/transformed/lifecycle-runtime/proguard.txt
+-keepattributes AnnotationDefault,
+                RuntimeVisibleAnnotations,
+                RuntimeVisibleParameterAnnotations,
+                RuntimeVisibleTypeAnnotations
+
+-keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
+    <fields>;
+}
+
+-keep class * implements androidx.lifecycle.GeneratedAdapter {
+    <init>(...);
+}
+
+-keepclassmembers class ** {
+    @androidx.lifecycle.OnLifecycleEvent *;
+}
+
+# The deprecated `android.app.Fragment` creates `Fragment` instances using reflection.
+# See: b/338958225, b/341537875
+-keepclasseswithmembers,allowobfuscation public class androidx.lifecycle.ReportFragment {
+    public <init>();
+}
+
+# this rule is need to work properly when app is compiled with api 28, see b/142778206
+# Also this rule prevents registerIn from being inlined.
+-keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/d354ac0e689fff146decaf922ede6e6c/transformed/lifecycle-runtime/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/0516064825888b7fcd17c075d0367b32/transformed/lifecycle-viewmodel-ktx-2.10.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/0516064825888b7fcd17c075d0367b32/transformed/lifecycle-viewmodel-ktx-2.10.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2ba49ffe6b48b89313456702004acf71/transformed/shrink-rules/lib/META-INF/proguard/androidx-lifecycle-lifecycle-common-java8.pro
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2ba49ffe6b48b89313456702004acf71/transformed/shrink-rules/lib/META-INF/proguard/androidx-lifecycle-lifecycle-common-java8.pro
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2c936a881f0bdb524785d45ca9ac34d0/transformed/lifecycle-viewmodel-savedstate/proguard.txt
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
+    <init>(androidx.lifecycle.SavedStateHandle);
+}
+
+-keepclassmembers,allowobfuscation class * extends androidx.lifecycle.AndroidViewModel {
+    <init>(android.app.Application,androidx.lifecycle.SavedStateHandle);
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2c936a881f0bdb524785d45ca9ac34d0/transformed/lifecycle-viewmodel-savedstate/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/027cbb0b6e17c100fa7e91fc702a73cd/transformed/savedstate-ktx-1.4.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/027cbb0b6e17c100fa7e91fc702a73cd/transformed/savedstate-ktx-1.4.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b722c5b53a63b13e6a3fda51df87541c/transformed/savedstate/proguard.txt
+# Copyright (C) 2019 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+-keepclassmembers,allowobfuscation class * implements androidx.savedstate.SavedStateRegistry$AutoRecreated {
+    <init>();
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b722c5b53a63b13e6a3fda51df87541c/transformed/savedstate/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/231885ef79f5f0fac5b77124e8b3d376/transformed/savedstate-compose/proguard.txt
+# Workaround for https://issuetracker.google.com/issues/346808608
+#
+# `androidx.savedstate.compose.LocalSavedStateRegistryOwner` will reflectively lookup for
+# `androidx.compose.ui.platform.LocalSavedStateRegistryOwner` to ensure backward compatibility
+# when using SavedState >= 1.3 with Compose <= 1.7.
+#
+# We need to keep the getter if the code using this is included.
+#
+# We need to suppress `ShrinkerUnresolvedReference` because the `LocalComposition` is in a
+# different module.
+#
+#noinspection ShrinkerUnresolvedReference
+-if public class androidx.compose.ui.platform.AndroidCompositionLocals_androidKt {
+    public static *** getLocalSavedStateRegistryOwner();
+}
+-keep public class androidx.compose.ui.platform.AndroidCompositionLocals_androidKt {
+    public static *** getLocalSavedStateRegistryOwner();
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/231885ef79f5f0fac5b77124e8b3d376/transformed/savedstate-compose/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a4b9b7e12598b70738a18e00fe810b0b/transformed/runtime/proguard.txt
+-assumenosideeffects public class androidx.compose.runtime.ComposerKt {
+    void sourceInformation(androidx.compose.runtime.Composer,java.lang.String);
+    void sourceInformationMarkerStart(androidx.compose.runtime.Composer,int,java.lang.String);
+    void sourceInformationMarkerEnd(androidx.compose.runtime.Composer);
+}
+
+# Composer's class initializer doesn't do anything but create an EMPTY object. Marking the
+# initializers as having no side effects can help encourage shrinkers to merge/devirtualize Composer
+# with ComposerImpl.
+-assumenosideeffects public class androidx.compose.runtime.Composer {
+    void <clinit>();
+}
+-assumenosideeffects public class androidx.compose.runtime.ComposerImpl {
+    void <clinit>();
+}
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.runtime.** {
+    # java.lang.Void == methods that return Nothing
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+
+    # For functions generating error messages
+    static java.lang.String exceptionMessage*(...);
+    java.lang.String exceptionMessage*(...);
+
+    static void compose*RuntimeError(...);
+    static java.lang.Void compose*RuntimeError(...);
+}
+
+# Runtime uses this field to enable group key based stack trace collection.
+-assumevalues class androidx.compose.runtime.tooling.ComposeStackTraceMode {
+     private static boolean isMinified return true;
+}
+
+# Assume the experimental link-buffer composer is not enabled
+-assumevalues public class androidx.compose.runtime.ComposeRuntimeFlags {
+    static boolean isLinkBufferComposerEnabled return false;
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a4b9b7e12598b70738a18e00fe810b0b/transformed/runtime/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/954b384de096533eef0c50a6ab0362a6/transformed/lifecycle-runtime-compose/proguard.txt
+# Workaround for https://issuetracker.google.com/issues/346808608
+#
+# `androidx.lifecycle.compose.LocalLifecycleOwner` will reflectively lookup for
+# `androidx.compose.ui.platform.LocalLifecycleOwner` to ensure backward compatibility
+# when using Lifecycle 2.8+ with Compose 1.6.
+#
+# We need to keep the getter if the code using this is included.
+#
+# We need to suppress `ShrinkerUnresolvedReference` because the `LocalComposition` is in a
+# different module.
+#
+#noinspection ShrinkerUnresolvedReference
+-if public class androidx.compose.ui.platform.AndroidCompositionLocals_androidKt {
+    public static *** getLocalLifecycleOwner();
+}
+-keep public class androidx.compose.ui.platform.AndroidCompositionLocals_androidKt {
+    public static *** getLocalLifecycleOwner();
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/954b384de096533eef0c50a6ab0362a6/transformed/lifecycle-runtime-compose/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/ad35e33a36b65e8a1944605991e29d27/transformed/lifecycle-runtime-ktx/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/ad35e33a36b65e8a1944605991e29d27/transformed/lifecycle-runtime-ktx/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a1a4c507876822cd3a44644d1797c40d/transformed/lifecycle-viewmodel-compose/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a1a4c507876822cd3a44644d1797c40d/transformed/lifecycle-viewmodel-compose/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b0d8e1ff7060cb8b63001777b8efcccc/transformed/ui/proguard.txt
+# Copyright (C) 2020 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# We supply these as stubs and are able to link to them at runtime
+# because they are hidden public classes in Android. We don't want
+# R8 to complain about them not being there during optimization.
+-dontwarn android.view.RenderNode
+-dontwarn android.view.DisplayListCanvas
+-dontwarn android.view.HardwareCanvas
+
+-keepclassmembers class androidx.compose.ui.platform.ViewLayerContainer {
+    protected void dispatchGetDisplayList();
+}
+
+-keepclassmembers class androidx.compose.ui.platform.AndroidComposeView {
+    android.view.View findViewByAccessibilityIdTraversal(int);
+}
+
+# Users can create Modifier.Node instances that implement multiple Modifier.Node interfaces,
+# so we cannot tell whether two modifier.node instances are of the same type without using
+# reflection to determine the class type. See b/265188224 for more context.
+-keep,allowobfuscation,allowshrinking class * extends androidx.compose.ui.node.ModifierNodeElement
+
+# Keep all the functions created to throw an exception. We don't want these functions to be
+# inlined in any way, which R8 will do by default. The whole point of these functions is to
+# reduce the amount of code generated at the call site.
+-keepclassmembers,allowshrinking,allowobfuscation class androidx.compose.**.* {
+    static void throw*Exception(...);
+    static void throw*ExceptionForNullCheck(...);
+    # For methods returning Nothing
+    static java.lang.Void throw*Exception(...);
+    static java.lang.Void throw*ExceptionForNullCheck(...);
+    # For functions generating error messages
+    static java.lang.String exceptionMessage*(...);
+    java.lang.String exceptionMessage*(...);
+}
+
+# When pointer input modifier nodes are added dynamically and have the same keys (common when
+# developers `Unit` for their keys), we need a way to differentiate them and using a
+# functional interface and comparing classes allows us to do that.
+-keepnames class androidx.compose.ui.input.pointer.PointerInputEventHandler {
+    *;
+}
+
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b0d8e1ff7060cb8b63001777b8efcccc/transformed/ui/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/36f14d1e567bc2624591f36d87b3ee85/transformed/activity-ktx-1.13.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/36f14d1e567bc2624591f36d87b3ee85/transformed/activity-ktx-1.13.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/5225767e7debecaf93ed7e09d8366962/transformed/activity-1.13.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/5225767e7debecaf93ed7e09d8366962/transformed/activity-1.13.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bd9de737f518b894dba840b0dcabd933/transformed/activity-compose-1.13.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bd9de737f518b894dba840b0dcabd933/transformed/activity-compose-1.13.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b87c58148464e301de913c019b66802/transformed/core-viewtree-1.0.0/proguard.txt
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b87c58148464e301de913c019b66802/transformed/core-viewtree-1.0.0/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/886d045cc2e332c35f480d052468bfa2/transformed/shrink-rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
+# Allow R8 to optimize away the FastServiceLoader.
+# Together with ServiceLoader optimization in R8
+# this results in direct instantiation when loading Dispatchers.Main
+-assumenosideeffects class kotlinx.coroutines.internal.MainDispatcherLoader {
+    boolean FAST_SERVICE_LOADER_ENABLED return false;
+}
+
+-assumenosideeffects class kotlinx.coroutines.internal.FastServiceLoaderKt {
+    boolean ANDROID_DETECTED return true;
+}
+
+# Disable support for "Missing Main Dispatcher", since we always have Android main dispatcher
+-assumenosideeffects class kotlinx.coroutines.internal.MainDispatchersKt {
+    boolean SUPPORT_MISSING return false;
+}
+
+# Statically turn off all debugging facilities and assertions
+-assumenosideeffects class kotlinx.coroutines.DebugKt {
+    boolean getASSERTIONS_ENABLED() return false;
+    boolean getDEBUG() return false;
+    boolean getRECOVER_STACK_TRACES() return false;
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/886d045cc2e332c35f480d052468bfa2/transformed/shrink-rules/lib/META-INF/com.android.tools/r8-from-1.6.0/coroutines.pro
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/7721b3d7ef621cd1c3e9ad2435046530/transformed/shrink-rules/lib/META-INF/com.android.tools/r8/coroutines.pro
+# When editing this file, update the following files as well:
+# - META-INF/proguard/coroutines.pro
+# - META-INF/com.android.tools/proguard/coroutines.pro
+
+# Most of volatile fields are updated with AFU and should not be mangled
+-keepclassmembers class kotlinx.coroutines.** {
+    volatile <fields>;
+}
+
+# Same story for the standard library's SafeContinuation that also uses AtomicReferenceFieldUpdater
+-keepclassmembers class kotlin.coroutines.SafeContinuation {
+    volatile <fields>;
+}
+
+# These classes are only required by kotlinx.coroutines.debug.AgentPremain, which is only loaded when
+# kotlinx-coroutines-core is used as a Java agent, so these are not needed in contexts where ProGuard is used.
+-dontwarn java.lang.instrument.ClassFileTransformer
+-dontwarn sun.misc.SignalHandler
+-dontwarn java.lang.instrument.Instrumentation
+-dontwarn sun.misc.Signal
+
+# Only used in `kotlinx.coroutines.internal.ExceptionsConstructor`.
+# The case when it is not available is hidden in a `try`-`catch`, as well as a check for Android.
+-dontwarn java.lang.ClassValue
+
+# An annotation used for build tooling, won't be directly accessed.
+-dontwarn org.codehaus.mojo.animal_sniffer.IgnoreJRERequirement
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/7721b3d7ef621cd1c3e9ad2435046530/transformed/shrink-rules/lib/META-INF/com.android.tools/r8/coroutines.pro
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/3007b323a27dced7de33af3f51bc7244/transformed/startup-runtime-1.1.1/proguard.txt
+# It's important that we preserve initializer names, given they are used in the AndroidManifest.xml.
+-keepnames class * extends androidx.startup.Initializer
+
+# These Proguard rules ensures that ComponentInitializers are are neither shrunk nor obfuscated,
+# and are a part of the primary dex file. This is because they are discovered and instantiated
+# during application startup.
+-keep class * extends androidx.startup.Initializer {
+    # Keep the public no-argument constructor while allowing other methods to be optimized.
+    <init>();
+}
+
+-assumenosideeffects class androidx.startup.StartupLogger { public static <methods>; }
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/3007b323a27dced7de33af3f51bc7244/transformed/startup-runtime-1.1.1/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e52b602e49e237c133060c84bab8a742/transformed/versionedparcelable-1.1.1/proguard.txt
+-keep class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e52b602e49e237c133060c84bab8a742/transformed/versionedparcelable-1.1.1/proguard.txt
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/be0a78f6df0282fa19e091a7cff7cf64/transformed/shrink-rules/lib/META-INF/proguard/androidx-collection-collection-ktx.pro
+# Intentionally empty proguard rules to indicate this library is safe to shrink
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/be0a78f6df0282fa19e091a7cff7cf64/transformed/shrink-rules/lib/META-INF/proguard/androidx-collection-collection-ktx.pro
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2f78d26456b2a1366d064afd13fdb932/transformed/shrink-rules/lib/META-INF/proguard/androidx-annotations.pro
+-keep,allowobfuscation @interface androidx.annotation.Keep
+-keep @androidx.annotation.Keep class * {*;}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <methods>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <fields>;
+}
+
+-keepclasseswithmembers class * {
+    @androidx.annotation.Keep <init>(...);
+}
+
+-keepclassmembers,allowobfuscation class * {
+  @androidx.annotation.DoNotInline <methods>;
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2f78d26456b2a1366d064afd13fdb932/transformed/shrink-rules/lib/META-INF/proguard/androidx-annotations.pro
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/75c3ca99263dd8e85c47387246fa5e5e/transformed/shrink-rules/lib/META-INF/com.android.tools/r8/kotlinx-serialization-common.pro
+# Keep `Companion` object fields of serializable classes.
+# This avoids serializer lookup through `getDeclaredClasses` as done for named companion objects.
+-if @kotlinx.serialization.Serializable class **
+-keepclassmembers class <1> {
+    static <1>$Companion Companion;
+}
+
+# Keep `serializer()` on companion objects (both default and named) of serializable classes.
+-if @kotlinx.serialization.Serializable class ** {
+    static **$* *;
+}
+-keepclassmembers class <2>$<3> {
+    kotlinx.serialization.KSerializer serializer(...);
+}
+
+# Keep `INSTANCE.serializer()` of serializable objects.
+-if @kotlinx.serialization.Serializable class ** {
+    public static ** INSTANCE;
+}
+-keepclassmembers class <1> {
+    public static <1> INSTANCE;
+    kotlinx.serialization.KSerializer serializer(...);
+}
+
+# @Serializable and @Polymorphic are used at runtime for polymorphic serialization.
+-keepattributes RuntimeVisibleAnnotations,AnnotationDefault
+
+# Don't print notes about potential mistakes or omissions in the configuration for kotlinx-serialization classes
+# See also https://github.com/Kotlin/kotlinx.serialization/issues/1900
+-dontnote kotlinx.serialization.**
+
+# Serialization core uses `java.lang.ClassValue` for caching inside these specified classes.
+# If there is no `java.lang.ClassValue` (for example, in Android), then R8/ProGuard will print a warning.
+# However, since in this case they will not be used, we can disable these warnings
+-dontwarn kotlinx.serialization.internal.ClassValueReferences
+
+# disable optimisation for descriptor field because in some versions of ProGuard, optimization generates incorrect bytecode that causes a verification error
+# see https://github.com/Kotlin/kotlinx.serialization/issues/2719
+-keepclassmembers public class **$$serializer {
+    private ** descriptor;
+}
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/75c3ca99263dd8e85c47387246fa5e5e/transformed/shrink-rules/lib/META-INF/com.android.tools/r8/kotlinx-serialization-common.pro
+# The proguard configuration file for the following section is /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/75c3ca99263dd8e85c47387246fa5e5e/transformed/shrink-rules/lib/META-INF/com.android.tools/r8/kotlinx-serialization-r8.pro
+# Rule to save runtime annotations on serializable class.
+# If the R8 full mode is used, annotations are removed from classes-files.
+#
+# For the annotation serializer, it is necessary to read the `Serializable` annotation inside the serializer<T>() function - if it is present,
+# then `SealedClassSerializer` is used, if absent, then `PolymorphicSerializer'.
+#
+# When using R8 full mode, all interfaces will be serialized using `PolymorphicSerializer`.
+#
+# see https://github.com/Kotlin/kotlinx.serialization/issues/2050
+
+ -if @kotlinx.serialization.Serializable class **
+ -keep, allowshrinking, allowoptimization, allowobfuscation, allowaccessmodification class <1>
+
+# End of content from /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/75c3ca99263dd8e85c47387246fa5e5e/transformed/shrink-rules/lib/META-INF/com.android.tools/r8/kotlinx-serialization-r8.pro
+# The proguard configuration file for the following section is <unknown>
+
+# End of content from <unknown>

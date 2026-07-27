@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.13.0" type="incidents">
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.17.0 is available: 1.19.0">
+        <fix-replace
+            description="Change to 1.19.0"
+            family="Update versions"
+            oldString="1.17.0"
+            replacement="1.19.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="51"
+            column="20"
+            startOffset="1320"
+            endLine="51"
+            endColumn="51"
+            endOffset="1351"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.10.0 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.10.0"
+            replacement="2.11.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="53"
+            column="20"
+            startOffset="1436"
+            endLine="53"
+            endColumn="69"
+            endOffset="1485"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-compose than 2.10.0 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.10.0"
+            replacement="2.11.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="54"
+            column="20"
+            startOffset="1506"
+            endLine="54"
+            endColumn="73"
+            endOffset="1559"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.10.0 is available: 2.11.0">
+        <fix-replace
+            description="Change to 2.11.0"
+            family="Update versions"
+            oldString="2.10.0"
+            replacement="2.11.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle.kts"
+            line="55"
+            column="20"
+            startOffset="1580"
+            endLine="55"
+            endColumn="75"
+            endOffset="1635"/>
+    </incident>
+
+</incidents>

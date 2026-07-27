@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.syncsound.app.audio.PcmPacketTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2026-07-26T05:26:02.934Z" hostname="nitins-MacBook-Air.local" time="0.003">
+  <properties/>
+  <testcase name="roundTripPreservesHeaderAndPayload" classname="com.syncsound.app.audio.PcmPacketTest" time="0.002"/>
+  <testcase name="malformedPacketIsRejected" classname="com.syncsound.app.audio.PcmPacketTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

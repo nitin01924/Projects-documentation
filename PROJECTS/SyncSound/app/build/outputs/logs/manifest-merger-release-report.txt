@@ -1,0 +1,438 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:2:1-44:12
+INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:2:1-44:12
+MERGED from [androidx.navigation:navigation-runtime-android:2.9.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/133656e44f66be99664dc902c77e9d92/transformed/navigation-runtime-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-common-android:2.9.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/28069524ed3f2acffb352c7d1c4a332c/transformed/navigation-common-release/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-compose-android:2.9.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e47b95a9c1320102b88e4ce23e3e6dfe/transformed/navigation-compose-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material3:material3-android:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b0b2aa1407b874b21c5bdda09a6e46f/transformed/material3/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.compose.animation:animation-core-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c4b06223a788b4863fe7bc0c30f70d35/transformed/animation-core/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-ripple-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/0fe7ba65168ea69d38c8ca9646231f3c/transformed/material-ripple/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.animation:animation-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9158f08b18c54608d4bb8aa8f536ccd4/transformed/animation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b7d784ba0f312657b6d7d9db61d4569e/transformed/foundation-layout/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.foundation:foundation-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/33123198c4ae726ff582e178da3d8bb3/transformed/foundation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-unit-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/08fbc1e017e8135d9db2446e5c47c776/transformed/ui-unit/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-graphics-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2d9341eebb45aab34aa17bc6f8f5e50a/transformed/ui-graphics/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-geometry-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a48b6a56dbfcf5468f833755e7419b3c/transformed/ui-geometry/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-util-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/51b4b60ac49d41cb361d71d09bc3c3bd/transformed/ui-util/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-text-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dad70557fb857f7008d5e72ca4d2b4f1/transformed/ui-text/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/aa9d7c455ece316a2689f0fefcfcd6cf/transformed/ui-tooling-preview/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigationevent:navigationevent-android:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/37b40874f4cd5722e804b346fa4e5df0/transformed/navigationevent/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.navigationevent:navigationevent-compose-android:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/fdd423fba77dd99a39a0234782bd0452/transformed/navigationevent-compose/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1ff6dfd5a09693aac3a0f865ebf16465/transformed/runtime-annotation/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-retain-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/5d71cc4ac72e9cbcedd649b59754d3d0/transformed/runtime-retain/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/41bd110e23c58752ab614fd2254ff475/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:17:1-23:12
+MERGED from [androidx.core:core-ktx:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/871dcb5a50f07e117809fbaac264dffa/transformed/core-ktx-1.18.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/6c788582f1b780555106f652d5983672/transformed/autofill-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.6.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dec83ca7497e216db147b527122ede48/transformed/transition-1.6.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window-core-android:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1189d4dd10582e45aa25c85f52b5c874/transformed/window-core/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:17:1-31:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/8a96b31042aad25ab9be953ae1b2541b/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/baf7ac534a317c218e483a4a8d6c1d2f/transformed/graphics-path-1.0.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b3a4e9bdec2c4b3c8d7507cd69a5c22/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/751949a64ba32672304bb2c60e784d16/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bf1e76096e1a8fd699e5ac5ac51a2ccc/transformed/lifecycle-livedata-core-ktx-2.10.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c7f263352cf35729a9be2400d6346286/transformed/lifecycle-livedata-2.10.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:17:1-35:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/01feb6b54ac8303893c7b586c0d3676d/transformed/lifecycle-livedata-core-2.10.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2c582d7dffa4d8a82563908d5a719a28/transformed/lifecycle-viewmodel-2.10.0/AndroidManifest.xml:2:1-5:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1c975e7c8b0b3f361ceb040deee7e154/transformed/lifecycle-viewmodel/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/d354ac0e689fff146decaf922ede6e6c/transformed/lifecycle-runtime/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/0516064825888b7fcd17c075d0367b32/transformed/lifecycle-viewmodel-ktx-2.10.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2c936a881f0bdb524785d45ca9ac34d0/transformed/lifecycle-viewmodel-savedstate/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-ktx:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/027cbb0b6e17c100fa7e91fc702a73cd/transformed/savedstate-ktx-1.4.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b722c5b53a63b13e6a3fda51df87541c/transformed/savedstate/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate-compose-android:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/231885ef79f5f0fac5b77124e8b3d376/transformed/savedstate-compose/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a4b9b7e12598b70738a18e00fe810b0b/transformed/runtime/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/888797b6dcc3576176e5072fb401d2cd/transformed/runtime-saveable/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/954b384de096533eef0c50a6ab0362a6/transformed/lifecycle-runtime-compose/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/ad35e33a36b65e8a1944605991e29d27/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a1a4c507876822cd3a44644d1797c40d/transformed/lifecycle-viewmodel-compose/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/06712f1004a801d7b531119dbb9e734a/transformed/material-icons-extended-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/8578a06afc5a8138101f535bf01e6070/transformed/material-icons-core-release/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.compose.ui:ui-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b0d8e1ff7060cb8b63001777b8efcccc/transformed/ui/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity-ktx:1.13.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/36f14d1e567bc2624591f36d87b3ee85/transformed/activity-ktx-1.13.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.activity:activity:1.13.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/5225767e7debecaf93ed7e09d8366962/transformed/activity-1.13.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity-compose:1.13.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bd9de737f518b894dba840b0dcabd933/transformed/activity-compose-1.13.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b87c58148464e301de913c019b66802/transformed/core-viewtree-1.0.0/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/ea51426cc293154deda80a60bc53ead2/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:2:1-7:12
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:17:1-55:12
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/3007b323a27dced7de33af3f51bc7244/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/56e920ef59ebb2581573209b7c3e2113/transformed/tracing-1.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/6bd94349e7a525125a15de3a4a366c1c/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e52b602e49e237c133060c84bab8a742/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/4a37673a6368ef82a3fedc49cc79c5e8/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/cd39db986e74c27be06af290d1a1c9a4/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/95da50cd7dd660dd14e81beb621bb253/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/be999d31386870dc9d5b47c852cb85a4/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+	package
+		INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:4:5-67
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:4:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:5:22-76
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:6:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:7:5-76
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:7:22-73
+uses-permission#android.permission.CHANGE_WIFI_MULTICAST_STATE
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:8:5-86
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:8:22-83
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:9:5-77
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:9:22-74
+uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:10:5-92
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:10:22-89
+uses-permission#android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:11:5-94
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:11:22-91
+uses-permission#android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:12:5-94
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:12:22-91
+uses-permission#android.permission.POST_NOTIFICATIONS
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:13:5-77
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:13:22-74
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:14:5-71
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:14:22-68
+uses-permission#android.permission.NEARBY_WIFI_DEVICES
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:15:5-18:31
+	android:usesPermissionFlags
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:17:9-55
+	tools:targetApi
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:18:9-28
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:16:9-62
+application
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:20:5-43:19
+INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:20:5-43:19
+MERGED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:22:5-29:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:28:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:23:5-53:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/3007b323a27dced7de33af3f51bc7244/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/3007b323a27dced7de33af3f51bc7244/transformed/startup-runtime-1.1.1/AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e52b602e49e237c133060c84bab8a742/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e52b602e49e237c133060c84bab8a742/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+	android:extractNativeLibs
+		INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:28:18-86
+	android:supportsRtl
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:28:9-35
+	android:label
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:26:9-41
+	android:fullBackupContent
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:24:9-54
+	android:roundIcon
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:27:9-61
+	android:icon
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:25:9-56
+	android:allowBackup
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:22:9-35
+	android:theme
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:29:9-47
+	android:dataExtractionRules
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:23:9-65
+	android:usesCleartextTraffic
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:30:9-44
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:21:9-45
+activity#com.syncsound.app.MainActivity
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:31:9-38:20
+	android:exported
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:33:13-36
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:32:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:34:13-37:29
+action#android.intent.action.MAIN
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:35:17-69
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:35:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:36:17-77
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:36:27-74
+service#com.syncsound.app.service.SessionForegroundService
+ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:39:9-42:93
+	android:exported
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:41:13-37
+	android:foregroundServiceType
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:42:13-90
+	android:name
+		ADDED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml:40:13-61
+uses-sdk
+INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml
+INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml
+MERGED from [androidx.navigation:navigation-runtime-android:2.9.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/133656e44f66be99664dc902c77e9d92/transformed/navigation-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-runtime-android:2.9.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/133656e44f66be99664dc902c77e9d92/transformed/navigation-runtime-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-android:2.9.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/28069524ed3f2acffb352c7d1c4a332c/transformed/navigation-common-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-common-android:2.9.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/28069524ed3f2acffb352c7d1c4a332c/transformed/navigation-common-release/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-compose-android:2.9.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e47b95a9c1320102b88e4ce23e3e6dfe/transformed/navigation-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigation:navigation-compose-android:2.9.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e47b95a9c1320102b88e4ce23e3e6dfe/transformed/navigation-compose-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material3:material3-android:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b0b2aa1407b874b21c5bdda09a6e46f/transformed/material3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.material3:material3-android:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b0b2aa1407b874b21c5bdda09a6e46f/transformed/material3/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c4b06223a788b4863fe7bc0c30f70d35/transformed/animation-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-core-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c4b06223a788b4863fe7bc0c30f70d35/transformed/animation-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/0fe7ba65168ea69d38c8ca9646231f3c/transformed/material-ripple/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-ripple-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/0fe7ba65168ea69d38c8ca9646231f3c/transformed/material-ripple/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9158f08b18c54608d4bb8aa8f536ccd4/transformed/animation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.animation:animation-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9158f08b18c54608d4bb8aa8f536ccd4/transformed/animation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b7d784ba0f312657b6d7d9db61d4569e/transformed/foundation-layout/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-layout-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b7d784ba0f312657b6d7d9db61d4569e/transformed/foundation-layout/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/33123198c4ae726ff582e178da3d8bb3/transformed/foundation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.foundation:foundation-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/33123198c4ae726ff582e178da3d8bb3/transformed/foundation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/08fbc1e017e8135d9db2446e5c47c776/transformed/ui-unit/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-unit-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/08fbc1e017e8135d9db2446e5c47c776/transformed/ui-unit/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2d9341eebb45aab34aa17bc6f8f5e50a/transformed/ui-graphics/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-graphics-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2d9341eebb45aab34aa17bc6f8f5e50a/transformed/ui-graphics/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a48b6a56dbfcf5468f833755e7419b3c/transformed/ui-geometry/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-geometry-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a48b6a56dbfcf5468f833755e7419b3c/transformed/ui-geometry/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/51b4b60ac49d41cb361d71d09bc3c3bd/transformed/ui-util/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-util-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/51b4b60ac49d41cb361d71d09bc3c3bd/transformed/ui-util/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dad70557fb857f7008d5e72ca4d2b4f1/transformed/ui-text/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-text-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dad70557fb857f7008d5e72ca4d2b4f1/transformed/ui-text/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/aa9d7c455ece316a2689f0fefcfcd6cf/transformed/ui-tooling-preview/AndroidManifest.xml:20:5-44
+MERGED from [androidx.compose.ui:ui-tooling-preview-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/aa9d7c455ece316a2689f0fefcfcd6cf/transformed/ui-tooling-preview/AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigationevent:navigationevent-android:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/37b40874f4cd5722e804b346fa4e5df0/transformed/navigationevent/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigationevent:navigationevent-android:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/37b40874f4cd5722e804b346fa4e5df0/transformed/navigationevent/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigationevent:navigationevent-compose-android:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/fdd423fba77dd99a39a0234782bd0452/transformed/navigationevent-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.navigationevent:navigationevent-compose-android:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/fdd423fba77dd99a39a0234782bd0452/transformed/navigationevent-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1ff6dfd5a09693aac3a0f865ebf16465/transformed/runtime-annotation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-annotation-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1ff6dfd5a09693aac3a0f865ebf16465/transformed/runtime-annotation/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-retain-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/5d71cc4ac72e9cbcedd649b59754d3d0/transformed/runtime-retain/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-retain-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/5d71cc4ac72e9cbcedd649b59754d3d0/transformed/runtime-retain/AndroidManifest.xml:5:5-44
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/41bd110e23c58752ab614fd2254ff475/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/41bd110e23c58752ab614fd2254ff475/transformed/customview-poolingcontainer-1.0.0/AndroidManifest.xml:20:5-21:38
+MERGED from [androidx.core:core-ktx:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/871dcb5a50f07e117809fbaac264dffa/transformed/core-ktx-1.18.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-ktx:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/871dcb5a50f07e117809fbaac264dffa/transformed/core-ktx-1.18.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/6c788582f1b780555106f652d5983672/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.autofill:autofill:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/6c788582f1b780555106f652d5983672/transformed/autofill-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.6.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dec83ca7497e216db147b527122ede48/transformed/transition-1.6.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.transition:transition:1.6.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/dec83ca7497e216db147b527122ede48/transformed/transition-1.6.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-core-android:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1189d4dd10582e45aa25c85f52b5c874/transformed/window-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window-core-android:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1189d4dd10582e45aa25c85f52b5c874/transformed/window-core/AndroidManifest.xml:5:5-44
+MERGED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/8a96b31042aad25ab9be953ae1b2541b/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/8a96b31042aad25ab9be953ae1b2541b/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/baf7ac534a317c218e483a4a8d6c1d2f/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.graphics:graphics-path:1.0.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/baf7ac534a317c218e483a4a8d6c1d2f/transformed/graphics-path-1.0.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b3a4e9bdec2c4b3c8d7507cd69a5c22/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b3a4e9bdec2c4b3c8d7507cd69a5c22/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/751949a64ba32672304bb2c60e784d16/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/751949a64ba32672304bb2c60e784d16/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bf1e76096e1a8fd699e5ac5ac51a2ccc/transformed/lifecycle-livedata-core-ktx-2.10.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bf1e76096e1a8fd699e5ac5ac51a2ccc/transformed/lifecycle-livedata-core-ktx-2.10.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c7f263352cf35729a9be2400d6346286/transformed/lifecycle-livedata-2.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/c7f263352cf35729a9be2400d6346286/transformed/lifecycle-livedata-2.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/01feb6b54ac8303893c7b586c0d3676d/transformed/lifecycle-livedata-core-2.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/01feb6b54ac8303893c7b586c0d3676d/transformed/lifecycle-livedata-core-2.10.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2c582d7dffa4d8a82563908d5a719a28/transformed/lifecycle-viewmodel-2.10.0/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2c582d7dffa4d8a82563908d5a719a28/transformed/lifecycle-viewmodel-2.10.0/AndroidManifest.xml:4:5-43
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1c975e7c8b0b3f361ceb040deee7e154/transformed/lifecycle-viewmodel/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1c975e7c8b0b3f361ceb040deee7e154/transformed/lifecycle-viewmodel/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/d354ac0e689fff146decaf922ede6e6c/transformed/lifecycle-runtime/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/d354ac0e689fff146decaf922ede6e6c/transformed/lifecycle-runtime/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/0516064825888b7fcd17c075d0367b32/transformed/lifecycle-viewmodel-ktx-2.10.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/0516064825888b7fcd17c075d0367b32/transformed/lifecycle-viewmodel-ktx-2.10.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2c936a881f0bdb524785d45ca9ac34d0/transformed/lifecycle-viewmodel-savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/2c936a881f0bdb524785d45ca9ac34d0/transformed/lifecycle-viewmodel-savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/027cbb0b6e17c100fa7e91fc702a73cd/transformed/savedstate-ktx-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-ktx:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/027cbb0b6e17c100fa7e91fc702a73cd/transformed/savedstate-ktx-1.4.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b722c5b53a63b13e6a3fda51df87541c/transformed/savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-android:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b722c5b53a63b13e6a3fda51df87541c/transformed/savedstate/AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/231885ef79f5f0fac5b77124e8b3d376/transformed/savedstate-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.savedstate:savedstate-compose-android:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/231885ef79f5f0fac5b77124e8b3d376/transformed/savedstate-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a4b9b7e12598b70738a18e00fe810b0b/transformed/runtime/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a4b9b7e12598b70738a18e00fe810b0b/transformed/runtime/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/888797b6dcc3576176e5072fb401d2cd/transformed/runtime-saveable/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.runtime:runtime-saveable-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/888797b6dcc3576176e5072fb401d2cd/transformed/runtime-saveable/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/954b384de096533eef0c50a6ab0362a6/transformed/lifecycle-runtime-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-compose-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/954b384de096533eef0c50a6ab0362a6/transformed/lifecycle-runtime-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/ad35e33a36b65e8a1944605991e29d27/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/ad35e33a36b65e8a1944605991e29d27/transformed/lifecycle-runtime-ktx/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a1a4c507876822cd3a44644d1797c40d/transformed/lifecycle-viewmodel-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-compose-android:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/a1a4c507876822cd3a44644d1797c40d/transformed/lifecycle-viewmodel-compose/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/06712f1004a801d7b531119dbb9e734a/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-extended-android:1.7.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/06712f1004a801d7b531119dbb9e734a/transformed/material-icons-extended-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/8578a06afc5a8138101f535bf01e6070/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.material:material-icons-core-android:1.7.8] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/8578a06afc5a8138101f535bf01e6070/transformed/material-icons-core-release/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b0d8e1ff7060cb8b63001777b8efcccc/transformed/ui/AndroidManifest.xml:5:5-44
+MERGED from [androidx.compose.ui:ui-android:1.11.3] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/b0d8e1ff7060cb8b63001777b8efcccc/transformed/ui/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.13.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/36f14d1e567bc2624591f36d87b3ee85/transformed/activity-ktx-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-ktx:1.13.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/36f14d1e567bc2624591f36d87b3ee85/transformed/activity-ktx-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity:1.13.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/5225767e7debecaf93ed7e09d8366962/transformed/activity-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.13.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/5225767e7debecaf93ed7e09d8366962/transformed/activity-1.13.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity-compose:1.13.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bd9de737f518b894dba840b0dcabd933/transformed/activity-compose-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.activity:activity-compose:1.13.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/bd9de737f518b894dba840b0dcabd933/transformed/activity-compose-1.13.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b87c58148464e301de913c019b66802/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core-viewtree:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/9b87c58148464e301de913c019b66802/transformed/core-viewtree-1.0.0/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/ea51426cc293154deda80a60bc53ead2/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/ea51426cc293154deda80a60bc53ead2/transformed/annotation-experimental-1.4.1/AndroidManifest.xml:5:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/3007b323a27dced7de33af3f51bc7244/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/3007b323a27dced7de33af3f51bc7244/transformed/startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/56e920ef59ebb2581573209b7c3e2113/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.tracing:tracing:1.2.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/56e920ef59ebb2581573209b7c3e2113/transformed/tracing-1.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/6bd94349e7a525125a15de3a4a366c1c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/6bd94349e7a525125a15de3a4a366c1c/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e52b602e49e237c133060c84bab8a742/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/e52b602e49e237c133060c84bab8a742/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/4a37673a6368ef82a3fedc49cc79c5e8/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/4a37673a6368ef82a3fedc49cc79c5e8/transformed/core-runtime-2.2.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/cd39db986e74c27be06af290d1a1c9a4/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/cd39db986e74c27be06af290d1a1c9a4/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/95da50cd7dd660dd14e81beb621bb253/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/95da50cd7dd660dd14e81beb621bb253/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/be999d31386870dc9d5b47c852cb85a4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/be999d31386870dc9d5b47c852cb85a4/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+	android:targetSdkVersion
+		INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/nitin/PROJECTS/SyncSound/app/src/main/AndroidManifest.xml
+uses-library#androidx.window.extensions
+ADDED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:23:9-25:40
+	android:required
+		ADDED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:25:13-37
+	android:name
+		ADDED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:24:13-54
+uses-library#androidx.window.sidecar
+ADDED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:26:9-28:40
+	android:required
+		ADDED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:28:13-37
+	android:name
+		ADDED from [androidx.window:window:1.5.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/52718266b7ef1d3aea51f06e09a0fe4e/transformed/window-1.5.0/AndroidManifest.xml:27:13-51
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/3007b323a27dced7de33af3f51bc7244/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/3007b323a27dced7de33af3f51bc7244/transformed/startup-runtime-1.1.1/AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:28:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:26:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:25:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/337b233673bad3ae4a1580e2f56ade4b/transformed/emoji2-1.4.0/AndroidManifest.xml:30:17-75
+permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:23:9-81
+permission#com.syncsound.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:22:5-24:47
+	android:protectionLevel
+		ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:24:9-44
+	android:name
+		ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:23:9-81
+uses-permission#${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:26:22-94
+uses-permission#com.syncsound.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION
+ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:26:5-97
+	android:name
+		ADDED from [androidx.core:core:1.18.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/1934a5f5969d1e3d2bf6146c61c7efcd/transformed/core-1.18.0/AndroidManifest.xml:26:22-94
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.10.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/721deef9b1fa2660e1ed8098ab7c3edc/transformed/lifecycle-process-2.10.0/AndroidManifest.xml:30:17-78
+meta-data#androidx.profileinstaller.ProfileInstallerInitializer
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:29:13-31:52
+	android:value
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:31:17-49
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:30:17-85
+receiver#androidx.profileinstaller.ProfileInstallReceiver
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:34:9-52:20
+	android:enabled
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:38:13-36
+	android:permission
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:39:13-57
+	android:directBootAware
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:36:13-44
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:35:13-76
+intent-filter#action:name:androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:40:13-42:29
+action#androidx.profileinstaller.action.INSTALL_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:17-91
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:41:25-88
+intent-filter#action:name:androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:43:13-45:29
+action#androidx.profileinstaller.action.SKIP_FILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:17-85
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:44:25-82
+intent-filter#action:name:androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:46:13-48:29
+action#androidx.profileinstaller.action.SAVE_PROFILE
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:17-88
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:47:25-85
+intent-filter#action:name:androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:49:13-51:29
+action#androidx.profileinstaller.action.BENCHMARK_OPERATION
+ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:17-95
+	android:name
+		ADDED from [androidx.profileinstaller:profileinstaller:1.4.0] /Users/nitin/PROJECTS/SyncSound/.gradle-user/caches/8.14.5/transforms/54a4724208b7e497d2a4c2200ab11f0f/transformed/profileinstaller-1.4.0/AndroidManifest.xml:50:25-92
